@@ -1,0 +1,84 @@
+html {
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+	--color-body-background: #282c34;
+	--color-body-text: #abb2bf;
+
+	--color-container-background: #2c313c;
+	--color-container-text: #abb2bf;
+	--size-container-width: 80vw;
+	--size-container-height: 100vh;
+
+	--color-header-background: #21252b;
+	--color-header-text: #7fdcdf;
+	--color-header-highlight: #9cdcfe;
+	--size-header-font: 8vh;
+
+	--color-content-background: #2c313c;
+	--color-content-text: #abb2bf;
+	--size-content-font: 2vh;
+
+	--color-footer-background: #21252b;
+	--color-footer-text: #abb2bf;
+	--size-footer-font: 2vh;
+
+	--color-bar-background: #21252b;
+	--color-bar-text: #abb2bf;
+
+	--color-bar-child-background: #21252b;
+	--color-bar-child-background-hover: #323842;
+	--color-bar-child-text: #abb2bf;
+	--color-bar-child-text-hover: #d7dae0;
+}
+
+body {
+	background-color: var(--color-body-background);
+	color: var(--color-body-text);
+}
+
+div.container {
+	background-color: var(--color-container-background);
+	color: var(--color-container-text);
+	width: var(--size-container-width);
+	height: var(--size-container-height);
+	margin: auto;
+}
+
+div.header {
+	background-color: var(--color-header-background);
+	color: var(--color-header-text);
+	font-size: var(--size-header-font);
+	text-align: center;
+	padding: 0.5vh;
+}
+div.header > span:nth-child(1) {
+	color: var(--color-header-highlight);
+}
+div.header > span:nth-child(3) {
+	color: var(--color-header-highlight);
+}
+
+div.content {
+	background-color: var(--color-content-background);
+	color: var(--color-content-text);
+	font-size: var(--size-content-font);
+}
+
+div.footer {
+	background-color: var(--color-footer-background);
+	color: var(--color-footer-text);
+}
+
+div.bar {
+	background-color: var(--color-bar-background);
+	color: var(--color-bar-text);
+}
+
+div.bar > * {
+	background-color: var(--color-bar-child-background);
+	color: var(--color-bar-child-text);
+}
+div.bar > *:hover {
+	background-color: var(--color-bar-child-background-hover);
+	color: var(--color-bar-child-text-hover);
+}

@@ -1,0 +1,73 @@
+html {
+	--color-gamezone: #282c34;
+	--color-player-1: #00bfa5;
+	--color-player-2: #e44d26;
+	--color-player-back: #454c5a;
+	--color-net: #dfdfdf;
+	--color-ball: #dfdfdf;
+
+	--size-gamezone-width: 40vh;
+	--size-gamezone-height: 60vh;
+	--size-z-gamezone-height: 10vh;
+	--size-player-width: 12%;
+	--size-player-height: 1%;
+	--size-net-width: 100%;
+	--size-net-height: 0.5%;
+	--size-ball: 2vh;
+	--size-ball-position-x: 0%;
+	--size-ball-position-y: 0%;
+	--size-ball-position-z: 0%;
+	/* 请注意 这里的 x y 为平面坐标, 而 z 为立体坐标 */
+}
+
+#gamezone {
+	background-color: var(--color-gamezone);
+	width: var(--size-gamezone-width);
+	height: var(--size-gamezone-height);
+	margin: 2vh auto;
+}
+
+#gamezone > .player {
+	width: var(--size-player-width);
+	height: var(--size-player-height);
+	position: relative;
+	left: calc(50% - var(--size-player-width) / 2);
+}
+#gamezone > #player1 {
+	background: linear-gradient(
+		to bottom,
+		var(--color-player-back),
+		var(--color-player-1)
+	);
+	top: calc((10% - var(--size-player-height) / 2) - var(--size-net-height));
+}
+#gamezone > #player2 {
+	background: linear-gradient(
+		to top,
+		var(--color-player-back),
+		var(--color-player-2)
+	);
+	top: calc(
+		100% - (10% - var(--size-player-height) / 2) - var(--size-net-height)
+	);
+}
+
+#gamezone > #net {
+	background-color: var(--color-net);
+	width: var(--size-net-width);
+	height: var(--size-net-height);
+	position: relative;
+	top: calc(50% - var(--size-net-height) / 2);
+}
+
+#gamezone > #ball {
+	background-color: var(--color-ball);
+	width: var(--size-ball);
+	height: var(--size-ball);
+	border-radius: calc(var(--size-ball) / 2);
+}
+
+#z-gamezone {
+	width: var(--size-gamezone-width);
+	height: var(--size-z-gamezone-height);
+}

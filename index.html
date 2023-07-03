@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title>| Ping | Pong |</title>
+		<meta name="description" content="online ping-pong game (with bot)" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="CSS/default.css" />
+		<link rel="stylesheet" href="CSS/game.css" />
+	</head>
+	<body>
+		<!--[if lt IE 9]>
+			<p class="browsehappy">
+				You are using an <strong>outdated</strong> browser. Please
+				<a href="#">upgrade your browser</a> to improve your experience.
+			</p>
+		<![endif]-->
+		<div class="container">
+			<!-- 标准定位元素 -->
+			<div class="header">
+				<span>P</span><span>ing</span> <span>P</span><span>ong</span>
+			</div>
+			<div class="content">
+				<div id="gamezone">
+					<!-- 精灵 -->
+					<div id="net"></div>
+					<div class="player" id="player1"></div>
+					<div class="player" id="player2"></div>
+					<div id="ball"></div>
+				</div>
+				<div id="z-gamezone"></div>
+			</div>
+			<div class="footer"></div>
+			<!-- 浮动定位元素 -->
+			<div class="bar"></div>
+			<!-- 绝对定位元素 -->
+			<div class=""></div>
+		</div>
+		<script src="JS/main.js" async defer></script>
+	</body>
+</html>
